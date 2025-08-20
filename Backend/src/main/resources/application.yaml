@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/guitarstrong
+    username: gs
+    password: gs
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true

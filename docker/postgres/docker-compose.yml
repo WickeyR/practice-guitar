@@ -1,0 +1,14 @@
+services:
+  pg:
+    image: postgres:16
+    container_name: gs-pg
+    environment:
+      POSTGRES_USER: gs
+      POSTGRES_PASSWORD: gs
+      POSTGRES_DB: guitarstrong
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
